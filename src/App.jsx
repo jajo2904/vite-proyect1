@@ -20,8 +20,8 @@ function App() {
       </header>
       <main id="inicio">
         <section className="intro" aria-labelledby="page-title">
-          <div><p className="eyebrow">EXPLORACIÓN VISUAL / 01</p><h1 id="page-title">Proyecto Portales<span>.</span></h1><p className="intro-copy">Una mirada al diseño de la aplicación.<br />Explora las propuestas de SIMA y Recrear Portales.</p></div>
-          <div className="project-note"><span className="note-number">03</span><div>Mockups originales<br /><span>Material Design · Desktop</span></div></div>
+          <div><p className="eyebrow">EXPLORACIÓN DE LA ACTUALIZACION DE SIMA/ 2.0.1 </p><h1 id="page-title">Automatización Gestor SIMA <span>.</span></h1><p className="intro-copy">Una mirada al diseño de la actualización de la aplicación y nuevas funciones.<br />Explora las nuevas funciones de la app SIMA y sus funciones de recrear portales.</p></div>
+          <div className="project-note"><span className="note-number">01</span><div>Mockups Paneles APP<br /><span>Material Design · Desktop</span></div></div>
         </section>
         <section className="gallery" aria-label="Mockups de Portales">
           <div className="gallery-bar"><div className="tabs" role="group" aria-label="Seleccionar mockup">{mockups.map((mockup, index) => <button key={mockup.id} type="button" aria-pressed={selected === index} className={selected === index ? 'tab active' : 'tab'} onClick={() => setSelected(index)}><span>0{index + 1}</span>{mockup.title}</button>)}</div><span className="gallery-count">0{selected + 1} / 03</span></div>
